@@ -1,0 +1,43 @@
+.header {
+  background-color: #FFE9E8;
+  color: #3A4659;
+  padding: 20px 0;
+  text-align: center;
+  margin: 0;
+  display: flex;
+  justify-content: space-between; /* Align children to opposite ends */
+  align-items: center; /* Center items vertically */
+}
+
+.heading {
+  margin-left: 20px; /* Adjust left margin as needed */
+  font-size: 2em;
+  text-align: left; /* Align text to the left */
+}
+
+.nav {
+  margin-right: 20px; /* Adjust right margin as needed */
+}
+
+.nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex; /* Align list items horizontally */
+}
+
+.nav li {
+  display: inline; /* Ensure inline display */
+  margin: 0 15px;
+}
+
+.nav a {
+  color: #3A4659;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: large;
+}
+
+.nav a:hover {
+  text-decoration: underline;
+}

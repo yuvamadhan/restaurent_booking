@@ -1,0 +1,107 @@
+
+  .image-container {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+  
+  .home-image {
+    display: block;
+    width: 100%;
+    height: 500px;
+    max-height: 700px; 
+  }
+  
+  .quote-overlay {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -20%);
+    background-color: rgba(255, 255, 255, 0.6); 
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 600px;
+  }
+  
+  .quote {
+    color: black;
+    font-size: 40px;
+    font-family: "royale";
+    text-align: center;
+    margin: 0;
+  }
+  
+  /* Footer styles */
+ 
+  
+  .howitworks{
+    display: block;
+    width: 100%;
+    height: 250px;
+    max-height: 400px; 
+
+  }
+  
+  .card{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    margin: 0 150px;
+    gap: 20px;
+}
+
+.chennai-card, .hydrabad-card, .karnataka-card, .mumbai-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 15px;
+    padding: 10px;
+    background-color: #fff;
+    width: 250px;
+}
+
+.chennai-card img, .hydrabad-card img, .karnataka-card img, .mumbai-card img {
+    height: 200px;
+    width: 250px;
+    border-radius: 15px;
+}
+
+.chennai-card span, .hydrabad-card span, .karnataka-card span, .mumbai-card span {
+    font-size: larger;
+    font-family: serif;
+    margin-top: 10px;
+}
+.cards{
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  margin: 0 150px;
+  gap: 20px;
+}
+
+.c, .h, .k, .m {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  border-radius: 15px;
+  padding: 10px;
+  background-color: #fff;
+  width: 250px;
+}
+
+.c img, .h img, .k img, .m img {
+  height: 200px;
+  width: 250px;
+  border-radius: 15px;
+}
+
+.c span, .h span, .k span, .m span {
+  font-size: larger;
+  font-family: serif;
+  margin-top: 10px;
+}
+
