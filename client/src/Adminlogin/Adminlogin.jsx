@@ -2,10 +2,10 @@ import React, { useState } from 'react';
 import email_icon from '../Assets/person.png';
 import password_icon from '../Assets/password.png';
 import axios from 'axios';
-import './Login.css';
+import './Adminlogin.css';
 import {useNavigate} from 'react-router-dom';
 
-const Login = () => {
+const Adminlogin = () => {
   const [values, setValues] = useState({
     username: '',
     password: ''
@@ -22,7 +22,7 @@ const navi= useNavigate()
       .then((res) => {
         console.log(res.data);
         alert('login sucessful');
-        navi('/home');
+        navi('/admin');
         
       })
       .catch((error) => {
@@ -60,4 +60,4 @@ const navi= useNavigate()
   );
 };
 
-export default Login;
+export default Adminlogin;

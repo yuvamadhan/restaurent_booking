@@ -1,10 +1,11 @@
-import React, { createContext, useState, useEffect } from 'react';
 import axios from 'axios';
+import React, { createContext, useEffect, useState } from 'react';
 
 export const CartContext = createContext();
 
 export const CartProvider = ({ children }) => {
   const [cart, setCart] = useState([]);
+  const [disabledItems, setDisabledItems] = useState([]);
 
   useEffect(() => {
     fetchCart();
@@ -42,8 +43,20 @@ export const CartProvider = ({ children }) => {
     }
   };
 
+  const toggleItemEnabled = (itemName) => {
+    setDisabledItems((prevDisabledItems) => {
+      if (prevDisabledItems.includes(itemName)) {
+        return prevDisabledItems.filter((item) => item !== itemName);
+      } else {
+        return [...prevDisabledItems, itemName];
+      }
+    });
+  };
+
   return (
-    <CartContext.Provider value={{ cart, addToCart, removeFromCart }}>
+    <CartContext.Provider
+      value={{ cart, addToCart, removeFromCart, disabledItems, toggleItemEnabled }}
+    >
       {children}
     </CartContext.Provider>
   );

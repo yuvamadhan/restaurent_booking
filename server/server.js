@@ -8,11 +8,11 @@ const app = express();
 const PORT = process.env.PORT || 8000;
 
 const pool = new Pool({
-  user: 'postgres',
-  host: 'localhost',
-  password: 'yuva6384',
-  database: 'postgres',
-  port: 5432,
+  user: 'ukwrqzev4tb4qmsvjsgl',
+  host: 'lbqrgkc6r4ysqgsspyobw-postgresql.services.clever-cloud.com',
+  password: 'bW5OBN2lMH22UWXynf6S76gAGW9XFe',
+  database: 'bqrgkc6r4ysqgsspyobw',
+  port:50013,
 });
 
 app.use(bodyParser.json());
